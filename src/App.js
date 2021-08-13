@@ -5,23 +5,25 @@ import Titlenav from './Components/TitleNav';
 import Info from './Components/Info';
 import Klarna from './Components/Klarna';
 import Choice from './Components/Choices';
-import Basket from './Components/Basket'
+import Basket from './Components/Basket';
+import Gallery from './Components/Gallery';
 
 const App = () => {
 
 return (
-<div>
-<Header/>
-<Nav/>
+  <div>
+    <Header />
+    <Nav />
 
-<div>
-<Titlenav/>
-<Info/>
-<Klarna/>
-<Choice/>
-<Basket/>
-</div>
-</div>
+    <div>
+      <Titlenav />
+      <Info />
+      <Gallery />
+      <Klarna />
+      <Choice />
+      <Basket />
+    </div>
+  </div>
 );
 
 };
