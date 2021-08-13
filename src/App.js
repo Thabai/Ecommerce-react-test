@@ -7,6 +7,7 @@ import Klarna from './Components/Klarna';
 import Choice from './Components/Choices';
 import Basket from './Components/Basket';
 import Gallery from './Components/Gallery';
+import Tabs from './Components/Tabs';
 
 const App = () => {
 
@@ -22,6 +23,9 @@ return (
       <Klarna />
       <Choice />
       <Basket />
+    </div>
+    <div>
+      <Tabs/>
     </div>
   </div>
 );
