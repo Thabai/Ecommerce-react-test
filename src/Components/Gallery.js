@@ -27,13 +27,13 @@ const Gallery = () => {
           slidesToShow={1}
         >
           <div>
-            <img className="gallery" src={Blazer} alt="" />
+            <img className="gallery" src={Blazer} alt="United bamboo blazer" />
           </div>
           <div>
-            <img className="gallery" src={Blazer2} alt="" />
+            <img className="gallery" src={Blazer2} alt="United bamboo blazer" />
           </div>
           <div>
-            <img className="gallery" src={Blazer3} alt="" />
+            <img className="gallery" src={Blazer3} alt="United bamboo blazer" />
           </div>
         </Slider>
         <Slider
@@ -45,13 +45,21 @@ const Gallery = () => {
           className="gallery_container"
         >
           <div>
-            <img className="gallery2" src={Blazer} alt="" />
+            <img className="gallery2" src={Blazer} alt="United bamboo blazer" />
           </div>
           <div>
-            <img className="gallery2" src={Blazer2} alt="" />
+            <img
+              className="gallery2"
+              src={Blazer2}
+              alt="United bamboo blazer"
+            />
           </div>
           <div>
-            <img className="gallery2" src={Blazer3} alt="" />
+            <img
+              className="gallery2"
+              src={Blazer3}
+              alt="United bamboo blazer"
+            />
           </div>
         </Slider>
       </div>
