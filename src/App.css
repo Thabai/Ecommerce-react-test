@@ -11,3 +11,38 @@
 .CartItem-count {
   padding: 20px;
 }
+
+.galleryCont{
+  width: 305px;
+}
+
+.gallery_container {
+  width: 305px;
+  height: 100px;
+}
+
+.gallery {
+  margin: 0, auto;
+  display: block;
+  justify-content: center;
+  border: 2px solid #9bc9e0;
+  width: 300px;
+  height: 300px;
+}
+
+.gallery2 {
+  display: flex;
+  object-fit: cover;
+  height: 100px;
+  width: 95%;
+  border: 2px solid #9bc9e0;
+}
+
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+}
