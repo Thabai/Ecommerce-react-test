@@ -58,7 +58,7 @@ const Choice = () => {
           </ToggleButtons>
           <ToggleButtons value="33">33</ToggleButtons>
           <ToggleButtons value="34">34</ToggleButtons>
-          <ToggleButtons value="35" disabled color="text.disabled">
+          <ToggleButtons value="35" disabled>
             35
           </ToggleButtons>
         </ToggleButtonGroup>

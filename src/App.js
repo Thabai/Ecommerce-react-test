@@ -8,6 +8,7 @@ import Choice from './Components/Choices';
 import Basket from './Components/Basket';
 import Gallery from './Components/Gallery';
 import Tabs from './Components/Tabs';
+import Contact from './Components/Contact';
 
 const App = () => {
 
@@ -25,7 +26,10 @@ return (
       <Basket />
     </div>
     <div>
-      <Tabs/>
+      <Tabs />
+    </div>
+    <div>
+      <Contact />
     </div>
   </div>
 );
