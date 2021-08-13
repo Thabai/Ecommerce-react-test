@@ -3,13 +3,13 @@ import FavoriteBorderOutlinedIcon from "@material-ui/icons/FavoriteBorderOutline
 import styled from "styled-components";
 import "../App.css";
 
-const Basket = ({ onAddOne, onRemoveOne }) =>  {
+const Basket = () =>  {
   return (
       <Container>
         <Counter>
-          <button className="fontL"  onClick={() => onRemoveOne()}> - </button>
+          <button className="fontL"> - </button>
           <span className="CartItem-count"> 1 </span>
-          <button className="fontL"  onClick={() => onAddOne()}> + </button>
+          <button className="fontL"> + </button>
         </Counter>
         <BasketAdd> Add to Basket </BasketAdd>
         <BlueDiv> <FavoriteBorderOutlinedIcon className="font"/> </BlueDiv>
