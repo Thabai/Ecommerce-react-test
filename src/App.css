@@ -4,18 +4,33 @@
   border: transparent;
 }
 
+.body {
+  background-color: rgb(230, 230, 230);
+}
+
 .font {
  color: #264f9d;
+}
+
+.sections {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /*Header*/
 .header {
   width: 100%;
-  height: 5vh;
+  height: 10%;
   display: flex;
   justify-content: space-between;
   background-color: rgb(230, 230, 230);
   
+}
+
+  @media screen and (max-width: 1000px) {
+    .header {
+    display: none;
+  }
 }
 
 .trust {
@@ -70,3 +85,42 @@
   right: 3% !important;
   z-index: 1;
 }
+
+
+/* Accordion */
+.desc {
+  background: #fdfeff;
+  border: none;
+  color: black;
+  width: 100%;
+}
+
+.review {
+  background: #9bc9e0;
+  border: none;
+  color: black;
+  width: 100%;
+}
+
+.review1 {
+  background: #9bc9e0;
+  border: none;
+  color: black;
+  width: 100%;
+  display: none;
+}
+
+ @media screen and (min-width: 1000px) {
+   .review {
+     display: none;
+   }
+   .review1 {
+     display: block;
+   }
+   .review1, .desc {
+    width: 50%;
+    }
+    .accordionholder {
+      display: flex;
+    }
+  }

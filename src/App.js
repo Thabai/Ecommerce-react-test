@@ -7,17 +7,18 @@ import Klarna from './Components/Klarna';
 import Choice from './Components/Choices';
 import Basket from './Components/Basket';
 import Gallery from './Components/Gallery';
-import Tabs from './Components/Tabs';
+import Tabs from './Components/Accordion';
 import Contact from './Components/Contact';
+import "./App.css";
 
 const App = () => {
 
 return (
-  <div>
+  <div className="body">
     <Header />
     <Nav />
 
-    <div>
+    <div >
       <Titlenav />
       <Info />
       <Gallery />
