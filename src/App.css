@@ -4,14 +4,38 @@
   border: transparent;
 }
 
-.font{
+.font {
  color: #264f9d;
 }
 
+/*Header*/
+.header {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(230, 230, 230);
+  
+}
+
+.trust {
+  width: 8%;
+  height: 5vh;
+  margin: 0 30px;
+}
+
+
+
+/*TitleNav */
+
+
+/*Cart*/
 .CartItem-count {
   padding: 20px;
 }
 
+
+/* Gallery */
 .galleryCont{
   width: 305px;
 }

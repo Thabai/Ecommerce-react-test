@@ -6,39 +6,48 @@ import CallOutlinedIcon from '@material-ui/icons/CallOutlined';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
 import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
-import '../App.css'
+import '../App.css';
+import styled from "styled-components";
 
 
 const Header = () => {
 
     return (
-      <div>
-        <img src={Trustpilot} alt="Trustpilot" />
-        <div className="font">
-          <a>
+      <div className="header">
+        <img className="trust" src={Trustpilot} alt="Trustpilot" />
+        <Container className="font">
+          <Tabs>
             <LocationOnOutlinedIcon />
             Shop by School
-          </a>
-          <a>
+          </Tabs>
+          <Tabs>
             <CalendarTodayOutlinedIcon />
             Book Appointment
-          </a>
-          <a>
+          </Tabs>
+          <Tabs>
             <CallOutlinedIcon />
             Contact Store
-          </a>
-          <a>
+          </Tabs>
+          <Tabs>
             <AccountCircleOutlinedIcon />
-          </a>
-          <a>
+          </Tabs>
+          <Tabs>
             <FavoriteBorderOutlinedIcon />
-          </a>
-          <a>
+          </Tabs>
+          <Tabs>
             <LocalMallOutlinedIcon />
-          </a>
-        </div>
+          </Tabs>
+        </Container>
       </div>
     );
 };
 
 export default Header;
+
+const Tabs = styled.a`
+  text-decoration: none;
+  padding-right: 20px;
+`;
+const Container = styled.div`
+  margin: 10px;
+`;
