@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Ecommerce-react-test/static/css/main.a3510a89.chunk.css",
+    "main.js": "/Ecommerce-react-test/static/js/main.0f6cec13.chunk.js",
+    "main.js.map": "/Ecommerce-react-test/static/js/main.0f6cec13.chunk.js.map",
+    "runtime-main.js": "/Ecommerce-react-test/static/js/runtime-main.0ceedb0c.js",
+    "runtime-main.js.map": "/Ecommerce-react-test/static/js/runtime-main.0ceedb0c.js.map",
+    "static/css/2.57048ed9.chunk.css": "/Ecommerce-react-test/static/css/2.57048ed9.chunk.css",
+    "static/js/2.15cff561.chunk.js": "/Ecommerce-react-test/static/js/2.15cff561.chunk.js",
+    "static/js/2.15cff561.chunk.js.map": "/Ecommerce-react-test/static/js/2.15cff561.chunk.js.map",
+    "static/js/3.6a937077.chunk.js": "/Ecommerce-react-test/static/js/3.6a937077.chunk.js",
+    "static/js/3.6a937077.chunk.js.map": "/Ecommerce-react-test/static/js/3.6a937077.chunk.js.map",
+    "index.html": "/Ecommerce-react-test/index.html",
+    "static/css/2.57048ed9.chunk.css.map": "/Ecommerce-react-test/static/css/2.57048ed9.chunk.css.map",
+    "static/css/main.a3510a89.chunk.css.map": "/Ecommerce-react-test/static/css/main.a3510a89.chunk.css.map",
+    "static/js/2.15cff561.chunk.js.LICENSE.txt": "/Ecommerce-react-test/static/js/2.15cff561.chunk.js.LICENSE.txt",
+    "static/media/BlazerCat.5720af01.png": "/Ecommerce-react-test/static/media/BlazerCat.5720af01.png",
+    "static/media/Trustpilot.125e3b3e.png": "/Ecommerce-react-test/static/media/Trustpilot.125e3b3e.png",
+    "static/media/blazer.10ab0c53.jpg": "/Ecommerce-react-test/static/media/blazer.10ab0c53.jpg",
+    "static/media/cat-club.bcf87b0d.jpg": "/Ecommerce-react-test/static/media/cat-club.bcf87b0d.jpg",
+    "static/media/clive-mark-logo.a0bac1b6.svg": "/Ecommerce-react-test/static/media/clive-mark-logo.a0bac1b6.svg",
+    "static/media/payment-providers.4b103e32.svg": "/Ecommerce-react-test/static/media/payment-providers.4b103e32.svg",
+    "static/media/product-suppliers.f8cc6a87.svg": "/Ecommerce-react-test/static/media/product-suppliers.f8cc6a87.svg",
+    "static/media/slick-theme.css": "/Ecommerce-react-test/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ceedb0c.js",
+    "static/css/2.57048ed9.chunk.css",
+    "static/js/2.15cff561.chunk.js",
+    "static/css/main.a3510a89.chunk.css",
+    "static/js/main.0f6cec13.chunk.js"
+  ]
+}
