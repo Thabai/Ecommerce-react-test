@@ -18,7 +18,7 @@ return (
     <Header />
     <Nav />
 
-    <div >
+    <div className="sections">
       <Titlenav />
       <Info />
       <Gallery />
@@ -29,9 +29,7 @@ return (
     <div>
       <Tabs />
     </div>
-    <div>
       <Contact />
-    </div>
   </div>
 );
 

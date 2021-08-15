@@ -10,7 +10,7 @@ import '../App.css';
 
 const Choice = () => {
   const [value, setValue] = useState("Black");
-  const [size, setSize] = useState('28');
+  const [size, setSize] = useState("28");
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -20,14 +20,14 @@ const Choice = () => {
     setSize(newSize);
   };
 
-
   return (
     <div>
-      <div>
+      <Container>
         <Name>
           <H3>Colour </H3>
           <h4> -{value}</h4>
         </Name>
+        <span className="lineup"></span>
         <BlackRadio
           checked={value === "Black"}
           onChange={handleChange}
@@ -43,10 +43,13 @@ const Choice = () => {
           onChange={handleChange}
           value="Red"
         />
-      </div>
-      <div>
-        <H3>Size </H3>
+      </Container>
+      <Container>
+        <Name>
+          <H3>Size </H3>
+        </Name>
         <ToggleButtonGroup value={size} exclusive onChange={handleSize}>
+          <span className="lineup"></span>
           <ToggleButtons value="28">28</ToggleButtons>
           <ToggleButtons value="29">29 </ToggleButtons>
           <ToggleButtons value="30">30</ToggleButtons>
@@ -62,10 +65,11 @@ const Choice = () => {
             35
           </ToggleButtons>
         </ToggleButtonGroup>
-        <a>
+        <div>
+          <span className="lineup"></span>
           <StraightenOutlinedIcon className="fontL" /> Size Guide
-        </a>
-      </div>
+        </div>
+      </Container>
     </div>
   );
 };
@@ -89,7 +93,7 @@ const BlueRadio = withStyles({
   root: {
     color: blue[800],
     background: blue[800],
-    "&$checked": {
+    "&$checked !important": {
       color: blue[50],
       background: blue[900],
     },
@@ -112,12 +116,19 @@ const RedRadio = withStyles({
 const ToggleButtons = withStyles({
   root: {
     color: blue[800],
+    background: grey[50],
   },
-  value: {},
+  checked: {},
 })((props) => <ToggleButton {...props} />);
+
+const Container = styled.div`
+  display: block;
+  padding: 20px;
+`;
 
 const Name = styled.div`
 display: flex;
+padding-left: 50px;
 `
 const H3 = styled.h3`
   text-transform: uppercase;

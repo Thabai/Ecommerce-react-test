@@ -19,7 +19,7 @@ const Gallery = () => {
 
 
     return (
-      <div className="galleryCont">
+      <div className="gallery_container1">
         <Slider
           asNavFor={nav2}
           ref={(slider) => (slider1 = slider)}
@@ -42,7 +42,7 @@ const Gallery = () => {
           slidesToShow={3}
           swipeToSlide={true}
           focusOnSelect={true}
-          className="gallery_container"
+          className="gallery_container2"
         >
           <div>
             <img className="gallery2" src={Blazer} alt="United bamboo blazer" />
