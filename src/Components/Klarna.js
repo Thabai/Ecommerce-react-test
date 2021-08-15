@@ -7,14 +7,14 @@ const Klarna = () => {
 
     return (
       <BlueDiv>
-        <p>
-          <CreditCardOutlinedIcon className="fontL" />
-          Make 3 payments of £9.99 with <a className="font">Klarna</a>
-        </p>
-        <p>
-          <LocalShippingOutlinedIcon className="fontL" />
-          Free Delivery Over £50
-        </p>
+        <Cont>
+          <P><CreditCardOutlinedIcon className="fontL" /></P>
+          <P> Make 3 payments of £9.99 with <a className="font">Klarna</a></P>
+        </Cont>
+        <Cont>
+        <P><LocalShippingOutlinedIcon className="fontL" /> </P>
+        <P> Free Delivery Over £50</P>
+        </Cont>
       </BlueDiv>
     );
 };
@@ -23,4 +23,20 @@ export default Klarna;
 
 const BlueDiv = styled.div`
   background: #d6edf8;
+  width: 45%;
+  padding: 10px;
+  justify-contents: space-between;
+
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+`;
+
+const Cont = styled.div`
+  display: flex;
+`;
+const P = styled.p`
+  padding: 10px;
 `;

@@ -29,8 +29,8 @@ const Nav = () => {
           </Links>
           <Bag>
             <LocalMallOutlinedIcon />
-            <MenuOutlinedIcon />
-          </Bag>
+            </Bag>
+           <ButtonHamburger > <MenuOutlinedIcon style={{margin: '65px 20px'}}/></ButtonHamburger >
         </Container>
         <ButtonH>
           <Button>
@@ -109,11 +109,29 @@ const Tabs = styled.a`
 const Bag = styled.div`
   display: none;
   width: 25%;
-  padding-right: 10px;
-  margin: 30px auto;
+  margin: auto;
+  padding-left: 8vw;
+
 
   @media screen and (max-width: 1000px) {
     display: flex;
-    justify-content: space-evenly;
+
+  }
+`;
+
+const ButtonHamburger = styled.button`
+  background-color: rgb(230, 230, 230);
+  border-color: transparent;
+  border-bottom: 1px lightgrey;
+  color: #264f9d;
+  transform: skew(-23deg);
+  display: none;
+  width: 20%;
+  height: 150px;
+
+
+  @media screen and (max-width: 1000px) {
+    display: block;
+    margin: -30px;
   }
 `;

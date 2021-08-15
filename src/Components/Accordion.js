@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Accordion, Card } from "react-bootstrap";
+import { Accordion, Card} from "react-bootstrap";
 import styled from 'styled-components';
 import "../App.css";
   
@@ -10,9 +10,9 @@ const Tabs = () => {
       <Container>
         <Card>
           <div className="accordionholder">
-            <Accordion.Toggle eventKey="0" className="desc">
-              <h5>Product Description</h5>
-            </Accordion.Toggle>
+              <Accordion.Toggle eventKey="0" className="desc">
+                <h5>Product Description</h5>
+              </Accordion.Toggle>
             <Accordion.Toggle eventKey="1" className="review1">
               <h5>Reviews</h5>
             </Accordion.Toggle>
@@ -71,4 +71,8 @@ const Container = styled.div`
   width: 80%;
   padding: 30px;
 
+   @media screen and (max-width: 1000px) {
+    width: 100%;
+    padding: 0px;
+   }
 `;
