@@ -36,7 +36,6 @@ return (
     <Contact />
   </div>
 );
-
 };
 
 export default App;
