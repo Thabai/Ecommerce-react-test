@@ -34,15 +34,21 @@ const Container = styled.div`
 
   @media screen and (max-width: 1000px) {
     justify-content: center;
+    margin: 30px 50px;
+    width: 40%;
+  }
+
+  @media screen and (max-width: 500px) {
+    justify-content: center;
     margin: auto;
     width: 80%;
   }
 `;
 
 const Counter = styled.div`
+  display: flex;
   background: white;
   border: 0.5px solid lightgrey;
-  padding: 5px;
 
   @media screen and (max-width: 1000px) {
     display: none;
@@ -72,14 +78,14 @@ const BlueDiv = styled.div`
 
   @media screen and (max-width: 1000px) {
     display: block;
-    margin: auto;
+    margin: 0 auto;
   }
 `;
 
 const BlueDiv2 = styled.div`
   background: #d6edf8;
   width: 50px;
-  padding-top: 10px;
+  padding-top: 20px;
 
   @media screen and (max-width: 1000px) {
     display: none;
