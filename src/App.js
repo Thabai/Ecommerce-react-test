@@ -20,16 +20,20 @@ return (
 
     <div className="sections">
       <Titlenav />
-      <Info />
-      <Gallery />
-      <Klarna />
-      <Choice />
-      <Basket />
+      <div className="layout_large">
+        <Gallery />
+        <div className="layout_large_right">
+          <Info />
+          <Klarna />
+          <Choice />
+          <Basket />
+        </div>
+      </div>
     </div>
     <div>
       <Tabs />
     </div>
-      <Contact />
+    <Contact />
   </div>
 );
 

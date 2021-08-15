@@ -5,16 +5,20 @@ import "../App.css";
 
 const Basket = () =>  {
   return (
-      <Container>
-        <Counter>
-          <button className="fontL"> - </button>
-          <span className="CartItem-count"> 1 </span>
-          <button className="fontL"> + </button>
-        </Counter>
-        <BlueDiv> <FavoriteBorderOutlinedIcon className="font"/> </BlueDiv>
-        <BasketAdd> Add to Basket </BasketAdd>
-        <BlueDiv2> <FavoriteBorderOutlinedIcon className="font"/> </BlueDiv2>
-        </Container>
+    <Container>
+      <Counter>
+        <button className="fontL"> - </button>
+        <span className="CartItem-count"> 1 </span>
+        <button className="fontL"> + </button>
+      </Counter>
+      <BlueDiv>
+        <FavoriteBorderOutlinedIcon className="font" />
+      </BlueDiv>
+      <BasketAdd> Add to Basket </BasketAdd>
+      <BlueDiv2>
+        <FavoriteBorderOutlinedIcon className="font" />
+      </BlueDiv2>
+    </Container>
   );
 }
 
@@ -25,10 +29,16 @@ const Container = styled.div`
   display: flex;
   text-align: center;
   padding: 10px;
-  width: 45%;
-  justify-content: space-evenly;
+  width: 90%;
+  justify-content: space-between;
 
   @media screen and (max-width: 1000px) {
+    justify-content: center;
+    margin: 30px 50px;
+    width: 40%;
+  }
+
+  @media screen and (max-width: 500px) {
     justify-content: center;
     margin: auto;
     width: 80%;
@@ -36,10 +46,9 @@ const Container = styled.div`
 `;
 
 const Counter = styled.div`
+  display: flex;
   background: white;
   border: 0.5px solid lightgrey;
-  padding: 10px;
-  width: 100px;
 
   @media screen and (max-width: 1000px) {
     display: none;
@@ -51,11 +60,13 @@ const BasketAdd = styled.button`
   background: #264f9d;
   border: none;
   padding: 10px;
-  width: 250px;
+  width: 300px;
+  text-transform: uppercase;
+
 
   @media screen and (max-width: 1000px) {
-  margin: auto;
-  width: 300px;
+    margin: auto;
+    width: 300px;
   }
 `;
 
@@ -67,14 +78,14 @@ const BlueDiv = styled.div`
 
   @media screen and (max-width: 1000px) {
     display: block;
-    margin: auto;
+    margin: 0 auto;
   }
 `;
 
 const BlueDiv2 = styled.div`
   background: #d6edf8;
   width: 50px;
-  padding-top: 10px;
+  padding-top: 20px;
 
   @media screen and (max-width: 1000px) {
     display: none;

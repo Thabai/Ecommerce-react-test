@@ -19,7 +19,7 @@ const Gallery = () => {
 
 
     return (
-      <div className="gallery_container1">
+      <div className="gallery_container_main">
         <Slider
           asNavFor={nav2}
           ref={(slider) => (slider1 = slider)}
