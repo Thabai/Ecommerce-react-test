@@ -16,6 +16,7 @@ export default Titlenav;
 
 const Links = styled.div`
   text-transform: uppercase;
+  padding-bottom: 50px;
 
   @media screen and (max-width: 1000px) {
     display: none;

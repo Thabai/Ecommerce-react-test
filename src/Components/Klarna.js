@@ -23,7 +23,7 @@ export default Klarna;
 
 const BlueDiv = styled.div`
   background: #d6edf8;
-  width: 45%;
+  width: 90%;
   padding: 10px;
   justify-contents: space-between;
 

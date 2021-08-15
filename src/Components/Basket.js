@@ -5,16 +5,20 @@ import "../App.css";
 
 const Basket = () =>  {
   return (
-      <Container>
-        <Counter>
-          <button className="fontL"> - </button>
-          <span className="CartItem-count"> 1 </span>
-          <button className="fontL"> + </button>
-        </Counter>
-        <BlueDiv> <FavoriteBorderOutlinedIcon className="font"/> </BlueDiv>
-        <BasketAdd> Add to Basket </BasketAdd>
-        <BlueDiv2> <FavoriteBorderOutlinedIcon className="font"/> </BlueDiv2>
-        </Container>
+    <Container>
+      <Counter>
+        <button className="fontL"> - </button>
+        <span className="CartItem-count"> 1 </span>
+        <button className="fontL"> + </button>
+      </Counter>
+      <BlueDiv>
+        <FavoriteBorderOutlinedIcon className="font" />
+      </BlueDiv>
+      <BasketAdd> Add to Basket </BasketAdd>
+      <BlueDiv2>
+        <FavoriteBorderOutlinedIcon className="font" />
+      </BlueDiv2>
+    </Container>
   );
 }
 
@@ -25,8 +29,8 @@ const Container = styled.div`
   display: flex;
   text-align: center;
   padding: 10px;
-  width: 45%;
-  justify-content: space-evenly;
+  width: 90%;
+  justify-content: space-between;
 
   @media screen and (max-width: 1000px) {
     justify-content: center;
@@ -38,8 +42,7 @@ const Container = styled.div`
 const Counter = styled.div`
   background: white;
   border: 0.5px solid lightgrey;
-  padding: 10px;
-  width: 100px;
+  padding: 5px;
 
   @media screen and (max-width: 1000px) {
     display: none;
@@ -51,11 +54,13 @@ const BasketAdd = styled.button`
   background: #264f9d;
   border: none;
   padding: 10px;
-  width: 250px;
+  width: 300px;
+  text-transform: uppercase;
+
 
   @media screen and (max-width: 1000px) {
-  margin: auto;
-  width: 300px;
+    margin: auto;
+    width: 300px;
   }
 `;
 

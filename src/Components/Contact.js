@@ -7,58 +7,59 @@ const Contact = () => {
 
 return (
   <div>
+    <Line></Line>
     <Container>
       <ContactUs>
-        <H3>Contact Us</H3>
+        <H3C>Contact Us</H3C>
         <Main>
           <div>
             <p>Place Name</p>
-            <p>00000000</p>
+            <Num>00000000</Num>
           </div>
           <div>
             <p>Place Name</p>
-            <p>00000000</p>
+            <Num>00000000</Num>
           </div>
           <div>
             <p>Place Name</p>
-            <p>00000000</p>
+            <Num>00000000</Num>
           </div>
           <div>
             <p>Place Name</p>
-            <p>00000000</p>
+            <Num>00000000</Num>
           </div>
           <div>
             <p>Place Name</p>
-            <p>00000000</p>
+            <Num>00000000</Num>
           </div>
           <div>
             <p>Place Name</p>
-            <p>00000000</p>
+            <Num>00000000</Num>
           </div>
         </Main>
         <Emails>
           <div>
             <p>Email Contact</p>
-            <p>email@email.com</p>
+            <Num>email@email.com</Num>
           </div>
           <div>
             <p>Email Contact</p>
-            <p>email@email.com</p>
+            <Num>email@email.com</Num>
           </div>
         </Emails>
       </ContactUs>
       {/* //other section// */}
       <Other>
-        <div>
+        <IconDiv>
           <Pay>
             <H3>Ways to pay</H3>
             <img src={Payment} />
           </Pay>
           <Provider>
-            <h3>Our providers</h3>
+            <H3>Our providers</H3>
             <img src={Providers} />
           </Provider>
-        </div>
+        </IconDiv>
         <LinkContainer>
           <H3>Links</H3>
           <LinkDiv>My Account</LinkDiv>
@@ -88,6 +89,13 @@ return (
 
 export default Contact;
 
+const Line = styled.div`
+  height: 2px;
+  width: 100%;
+  background: white;
+
+`;
+
 const Container = styled.div`
   display: flex;
   text-align: center;
@@ -96,15 +104,16 @@ const Container = styled.div`
 
   @media screen and (max-width: 1000px) {
     display: block;
+    
   }
 `;
 
 const ContactUs = styled.div`
   display: block;
-  width: 50%;
+  width: 40%;
   text-align: left;
   padding: 40px;
-  background: #9bc9e0;
+  background: #d1eaf7;
 
   @media screen and (max-width: 1000px) {
     display: none;
@@ -112,11 +121,22 @@ const ContactUs = styled.div`
 `;
 
 const H3 = styled.h3`
-  padding-left: 20px;
   padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #264f9d;
+
+`;
+
+const H3C = styled.h3`
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #264f9d;
+  padding-left: 20px;
 
   @media screen and (max-width: 1000px) {
-  padding-left: 0px;
+    padding-left: 0px;
   }
 `;
 
@@ -136,8 +156,9 @@ const Other = styled.div`
   display: flex;
   text-align: left;
   padding: 40px;
-  width: 50%;
+  width: 60%;
   justify-content: space-evenly;
+  background: #9bc9e0;
 
   @media screen and (max-width: 1000px) {
     display: block;
@@ -146,15 +167,23 @@ const Other = styled.div`
   }
 `;
 
+const IconDiv = styled.div`
+  @media screen and (min-width: 1000px) {
+    width: 50%;
+  }
+`;
+
+
 const Pay = styled.div`
   display: block;
   width: 60%;
   padding-left: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 `;
 
 const Provider = styled.div`
   display: block;
+  padding: 20px;
 
   @media screen and (max-width: 1000px) {
     display: none;
@@ -164,13 +193,22 @@ const Provider = styled.div`
 const LinkContainer = styled.div`
   display: block;
   width: 60%;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-bottom: 40px;
+
+  @media screen and (min-width: 1000px) {
+    width: 25%;
+  }
 `;
 
 const LinkDiv = styled.div`
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+`;
+
+const Num = styled.p`
+  color: rgb(99, 75, 122);
+  font-weight: 700;
 `;
 
 

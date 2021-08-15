@@ -32,16 +32,19 @@ const Choice = () => {
           checked={value === "Black"}
           onChange={handleChange}
           value="Black"
+          style={{ margin: "10px 10px" }}
         />
         <BlueRadio
           checked={value === "Blue"}
           onChange={handleChange}
           value="Blue"
+          style={{ margin: "10px 10px" }}
         />
         <RedRadio
           checked={value === "Red"}
           onChange={handleChange}
           value="Red"
+          style={{ margin: "10px 10px" }}
         />
       </Container>
       <Container>
@@ -93,7 +96,7 @@ const BlueRadio = withStyles({
   root: {
     color: blue[800],
     background: blue[800],
-    "&$checked !important": {
+    "&$checked": {
       color: blue[50],
       background: blue[900],
     },
@@ -124,15 +127,25 @@ const ToggleButtons = withStyles({
 const Container = styled.div`
   display: block;
   padding: 20px;
+
+  @media screen and (min-width: 1000px) {
+  padding-top: 40px;
+
+    }
 `;
 
 const Name = styled.div`
-display: flex;
-padding-left: 50px;
-`
+  display: flex;
+  padding-left: 50px;
+
+  @media screen and (min-width: 1000px) {
+    padding-left: 0px;
+  }
+`;
 const H3 = styled.h3`
   text-transform: uppercase;
   padding-right: 5px;
   color: #264f9d;
+  font-weight: 700;
 `;
 
