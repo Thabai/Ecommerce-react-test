@@ -104,7 +104,6 @@ const Container = styled.div`
 
   @media screen and (max-width: 1000px) {
     display: block;
-    
   }
 `;
 
@@ -125,7 +124,9 @@ const H3 = styled.h3`
   text-transform: uppercase;
   font-weight: 700;
   color: #264f9d;
-
+  @media screen and (max-width: 1500px) {
+  font-size: 20px;
+  }
 `;
 
 const H3C = styled.h3`
@@ -135,6 +136,9 @@ const H3C = styled.h3`
   color: #264f9d;
   padding-left: 20px;
 
+  @media screen and (max-width: 1500px) {
+    font-size: 20px;
+  }
   @media screen and (max-width: 1000px) {
     padding-left: 0px;
   }
