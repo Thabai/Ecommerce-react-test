@@ -9,7 +9,7 @@ const Info = () => {
         <h2 className="font">Aldridge School Girls Blazer</h2>
         <Price>
           <P className="fontL">£29.99</P>
-          <PriceIcon>
+          <PriceIcon >
             <InsertChartOutlinedIcon className="fontL" />
             Compare Prices
           </PriceIcon>
@@ -22,19 +22,14 @@ export default Info;
 
 const Container = styled.div`
   padding-left: 15px;
+  width: 100%;
 
   @media screen and (max-width: 1000px) {
-    margin: 0 40px;
-    position: relative;
-    top: -100vh;
-    left: 40px;
-    padding-left: 0px;
+    margin: 0 auto;
+    padding-left: 20px;
+    width: 100%;
   }
-  @media screen and (max-width: 700px) {
-    position: relative;
-    top: -60vh;
-    left: 20px;
-    padding-left: 0px;
+ 
   }
 `;
 
@@ -50,6 +45,7 @@ const P = styled.p`
 
 
 const PriceIcon = styled.div`
-  margin: 5px ;
+  margin: 5px;
   padding-bottom: 20px;
-`;
+  font-size: 20px;
+`

@@ -68,10 +68,10 @@ const Choice = () => {
             35
           </ToggleButtons>
         </ToggleButtonGroup>
-        <div>
+        <Div>
           <span className="lineup"></span>
           <StraightenOutlinedIcon className="fontL" /> Size Guide
-        </div>
+        </Div>
       </Container>
     </div>
   );
@@ -129,9 +129,14 @@ const Container = styled.div`
   padding: 20px;
 
   @media screen and (min-width: 1000px) {
-  padding-top: 40px;
-
-    }
+    padding-top: 40px;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 0px;
+    padding-top: 40px;
+    margin: -20px;
+    padding-bottom: 40px;
+  }
 `;
 
 const Name = styled.div`
@@ -149,3 +154,8 @@ const H3 = styled.h3`
   font-weight: 700;
 `;
 
+const Div = styled.div`
+  @media screen and (max-width: 600px) {
+    font-size: 15px;
+  }
+`;

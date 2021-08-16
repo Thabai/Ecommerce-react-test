@@ -23,14 +23,25 @@ export default Klarna;
 
 const BlueDiv = styled.div`
   background: #d6edf8;
-  width: 90%;
+  width: 80%;
   padding: 10px;
   justify-contents: space-between;
+  font-size: 25px;
 
   @media screen and (max-width: 1000px) {
-    width: 80%;
-    margin: auto;
+    width: 75%;
+    margin: 50px;
     text-align: center;
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .sections {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      font-size: 15px;
+    }
   }
 `;
 
@@ -39,4 +50,7 @@ const Cont = styled.div`
 `;
 const P = styled.p`
   padding: 10px;
+  @media screen and (max-width: 600px) {
+    padding: 5px;
+  }
 `;
